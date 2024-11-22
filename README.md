@@ -56,7 +56,7 @@ Note : File name should be with HDL Extension
 •	fa_4bit.v → Top Module for Adding 4-bit Inputs. 
 
 •	fa_4bit_test.v → Test bench
-
+```
 module test_4bit;
 
 reg [3:0] A;
@@ -84,9 +84,10 @@ end initial
 #50 $finish;
 
 endmodule
+```
 
 */Program to design 4 bit adder by instantiating 1 bit Full adder.also add test bench program */
-Developed by: Register Number*/
+Developed by: 212221060239*/
 
 ## Functional Simulation: 
 
