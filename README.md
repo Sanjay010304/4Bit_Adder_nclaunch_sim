@@ -55,20 +55,34 @@ Note : File name should be with HDL Extension
 
 •	fa_4bit.v → Top Module for Adding 4-bit Inputs. 
 
-•	fa_4bit_test.v → Test bench 
+•	fa_4bit_test.v → Test bench
+
 module test_4bit;
+
 reg [3:0] A;
+
 reg [3:0] B; reg C0;
+
 wire [3:0] S; wire C4;
+
 fulladd_4bit dut (A,B,C0,S,C4);
-initial 
+
+initial
+
 begin
+
 A=4'b0011;B=4'b0011;C0=1'b0;
+
 #10;  A=4'b1011;B=4'b0111;C0=1'b1;
+
 #10; A=4'b1111;B=4'b1111;C0=1'b1;
+
 #10;
+
 end initial
+
 #50 $finish;
+
 endmodule
 
 */Program to design 4 bit adder by instantiating 1 bit Full adder.also add test bench program */
